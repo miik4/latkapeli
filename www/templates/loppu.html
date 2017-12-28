@@ -1,0 +1,16 @@
+<ion-header-bar align-title="center" class="bar-positive">
+
+    <div class="title">Lätkäpeli</div>
+
+</ion-header-bar>
+<ion-content class="has-header padding" id="loppu_content">
+    
+    <div id="loppu_content_sisalto">
+        
+        <h4 ng-show="({{maalit<1}})">Höh, et saanut yhtään maalia. Yritä uudelleen!</h4>
+        <h4 ng-show="({{maalit>0}})">Hienoa, sait {{maalit}} maalia!</h4>
+        <button class="button button-positive button-full" ng-click="jaaPisteet()">Jaa tulos</button>
+        <button class="button button-positive button-full" ng-click="aloitaUusipeli()">Pelaa uudelleen</button>
+    </div>
+
+</ion-content>

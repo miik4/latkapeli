@@ -1,0 +1,18 @@
+<ion-header-bar align-title="center" class="bar-positive">
+
+    <div class="title">Lätkäpeli</div>
+
+</ion-header-bar>
+<ion-content class="has-header padding" id="loppu_content">
+    
+    <div id="loppu_content_sisalto">
+        <h4>Sait {{maalit}} maalia.</h4>
+        <label class="item item-input">
+        <span class="input-label">Nimi:</span>
+        <input type="text" name="input" ng-model="nimi.teksti">
+        </label>
+        <button class="button button-positive button-full" ng-click="lisaaKantaanPisteetNimi()">Jaa tulos</button>
+        <a class="button button-positive button-full" href="#/alku">Peruuta</a>
+    </div>
+
+</ion-content>

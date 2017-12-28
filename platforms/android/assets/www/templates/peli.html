@@ -1,0 +1,20 @@
+    <ion-header-bar align-title="center" class="bar-positive">
+
+        <div class="title">Maalit: {{maalit}}</div>
+
+    </ion-header-bar>
+    <ion-content class="has-header has-footer padding" id="content" ng-click="pysaytaNeula()">
+
+        <div id="korkeuspalkki">
+            <div ng-style="pystyPalkki" id="korkeuspalkkiLiukuri"></div>
+        </div>
+
+        <div id="ilmoitus">
+            {{viesti}}
+        </div>
+
+    </ion-content>
+
+    <div class="bar bar-footer" style="height: 80px;">
+        <div class="title" style="height: 80px;"><img id="vaakanuoli" ng-src="img/nuoli2.png" height="150" ng-style="munTyyli" ng-click="pysaytaNeula()"></div>
+    </div>
